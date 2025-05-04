@@ -1,5 +1,4 @@
 package ntu.duongngoclenh.demo_nhinhinhdoanchu;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
