@@ -32,7 +32,7 @@ public class PlayGameActivity extends AppCompatActivity {
     int index = 0;
     ArrayList<Integer> ViTriBanDau;
     ImageView imgHinhCauHoi, imghomeIcon;
-    TextView tvTien, tvMan;
+    TextView tvTien;
     // Launcher để nhận kết quả từ QuaManMainActivity
     private ActivityResultLauncher<Intent> quaManActivityLauncher;
     @Override
@@ -44,7 +44,7 @@ public class PlayGameActivity extends AppCompatActivity {
         gdvNhapDapAn = findViewById(R.id.gdvNhapDapAn);
         imgHinhCauHoi = findViewById(R.id.imgHinhCauHoi);
         tvTien = findViewById(R.id.tvTien);
-        tvMan = findViewById(R.id.tvManSo);
+
         imghomeIcon = findViewById(R.id.imgHomeIcon);
         imghomeIcon.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -204,7 +204,7 @@ public class PlayGameActivity extends AppCompatActivity {
         tvTien.setText(models.nguoiChoi.tien+"");
         // Cập nhật số màn (tăng từ 1 đến 10 dựa trên models.cauSo)
         int manSo = Math.min(models.cauSo + 1, 10); // Giới hạn tối đa là 10
-        tvMan.setText("Màn " + manSo);
+
     }
 
     public void GoiY(View view) {
